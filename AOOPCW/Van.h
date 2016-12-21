@@ -1,25 +1,27 @@
-
+#pragma once
 #include <string>
+
 using  namespace std;
 
 class Van
 {
 
 private:
-	typedef struct 
-	{
-		string large, medium, small;
-	}Capacity;
-
+	
+	string Capacity;
 	int RentMin;
 	float RentRate;
 
 public:
-	Van();
-	~Van();
 
-	void setCapacity(Capacity capacity);
-	Capacity getCapacity();
+	Van(); 
+
+	Van(int rentMin, float rentRtae);
+
+	Van(string capacity, int rentMin, float rentRate);
+
+	void setCapacity(string capacity);
+	string getCapacity();
 
 	void setRentMin(int rent);
 	int getRentMin();
@@ -27,13 +29,7 @@ public:
 	void setRentRate(float rate);
 	float getRentRate();
 
+	void printDetails();
 
 };
 
-Van::Van()
-{
-}
-
-Van::~Van()
-{
-}

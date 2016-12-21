@@ -1,11 +1,13 @@
 #include "Van.h"
+#include <iostream>
 
-void Van::setCapacity(Capacity capacity) {
-	Capacity a = capacity;
+//Accessors Methods
+void Van::setCapacity(string capacity) {
+	string Capacity = capacity;
 }
 
-Capacity Van::getCapacity() {
-	return a;
+string Van::getCapacity() {
+	return Capacity;
 }
 
 void Van::setRentMin(int rent) {
@@ -23,11 +25,29 @@ void Van::setRentRate(float rent) {
 float Van::getRentRate() {
 	return RentRate;
 }
+
+//Constructors 
 Van::Van()
 {
 }
 
-
-Van::~Van()
+Van::Van(int rentMin, float rentRate)
 {
+	RentMin = rentMin;
+	RentRate = rentRate;
 }
+
+Van::Van(string capacity, int rentMin, float rentRate)
+{
+	Capacity = capacity;
+	RentMin = rentMin;
+	RentRate = rentRate;
+}
+
+//Print the details of the van object
+void Van::printDetails()
+{
+	cout << "Capacity: " << Capacity <<  endl << "Minimum Rent: " << RentMin << endl << "Rent Rate: " << RentRate << endl ;
+}
+
+
