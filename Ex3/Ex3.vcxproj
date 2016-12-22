@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AbstractVan.cpp" />
+    <ClCompile Include="Abstract.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{942E5E10-F749-4DE2-838B-2788AE8B4927}</ProjectGuid>
-    <RootNamespace>Ex2</RootNamespace>
+    <ProjectGuid>{03DDCC60-027F-4BDC-9B71-D24AF1EED8FA}</ProjectGuid>
+    <RootNamespace>Ex3</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
